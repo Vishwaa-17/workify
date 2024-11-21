@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Our Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpeg" alt="logo">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Categories -->
+    <div class="popular-list">
+        <span>Categories:</span>
+        <ul>
+            <li><a href="#" onclick="filterJobs(event)">All</a></li> <!-- Show all categories -->
+            <li><a href="#" onclick="filterJobs(event)">Web Development</a></li>
+            <li><a href="#" onclick="filterJobs(event)">Video and Animation</a></li>
+            <li><a href="#" onclick="filterJobs(event)">Audio and Music</a></li>
+            <li><a href="#" onclick="filterJobs(event)">Business</a></li>
+            <li><a href="#" onclick="filterJobs(event)">Graphic Designing</a></li>
+            <li><a href="#" onclick="filterJobs(event)">AI/ML and Data Science</a></li>
+            <li><a href="#" onclick="filterJobs(event)">Engineering</a></li>
+            <li><a href="#" onclick="filterJobs(event)">Robotics</a></li>
+        </ul>
+       
+    </div>
+    <div class="sort-button">
+        <span>Filters:</span>
+        <ul>
+            <li><button onclick="sortCardsByProfit()">Sort by Profits</button></li>
+            <li><button onclick="sortCardsByDeadline()">Sort by Deadlines</button></li>
+        </ul>
+    </div>
+    <div class="Content-headerAndFilterButton-K7J">
+        <div class="Content-joblistHeader-tRn" role="heading" aria-level="3">
+            Projects
+        </div>
+    </div>
+
+    <!-- Cards for Projects -->
+    <div class="card-container">
+        <!-- Project Card 1 -->
+        <a href="/internship/detail/project1" class="internship-card" data-category="AI/ML and Data Science">
+            <div class="heading">
+                <div class="content">
+                    <p class="job-title">AI in Healthcare</p>
+                </div>
+            </div>
+            <ul class="job-details">
+                <li><strong>Category:</strong>AI/ML and Data Science</li>
+                <li><strong>Deadline:</strong> 10 days</li>
+                <li><strong>Profit:</strong> ₹ 50,000</li>
+            </ul>
+            <div class="footer">
+                <span class="view-details-cta">Add to Dashboard<i class="ic-16-s15-chevron-right"></i></span>
+            </div>
+        </a>
+
+        <!-- Project Card 2 -->
+        <a href="/internship/detail/project2" class="internship-card" data-category="AI/ML and Data Science">
+            <div class="heading">
+                <div class="content">
+                    <p class="job-title">Data Science for Business</p>
+                </div>
+            </div>
+            <ul class="job-details">
+                <li><strong>Category:</strong>AI/ML and Data Science</li>
+                <li><strong>Deadline:</strong> 5 days</li>
+                <li><strong>Profit:</strong> ₹ 40,000</li>
+            </ul>
+            <div class="footer">
+                <span class="view-details-cta">Add to Dashboard<i class="ic-16-s15-chevron-right"></i></span>
+            </div>
+        </a>
+
+        <!-- Project Card 3 -->
+        <a href="/internship/detail/project3" class="internship-card" data-category="Engineering">
+            <div class="heading">
+                <div class="content">
+                    <p class="job-title">Blockchain Development</p>
+                </div>
+            </div>
+            <ul class="job-details">
+                <li><strong>Category:</strong>Engineering</li>
+                <li><strong>Deadline:</strong> 3 days</li>
+                <li><strong>Profit:</strong> ₹ 60,000</li>
+            </ul>
+            <div class="footer">
+                <span class="view-details-cta">Add to Dashboard<i class="ic-16-s15-chevron-right"></i></span>
+            </div>
+        </a>
+<!-- Project Card 4 -->
+<a href="/internship/detail/project4" class="internship-card" data-category="Web Development">
+    <div class="heading">
+        <div class="content">
+            <p class="job-title">Charity Website development</p>
+        </div>
+    </div>
+    <ul class="job-details">
+        <li><strong>Category:</strong>Web Development</li>
+        <li><strong>Deadline:</strong> 2 days</li>
+        <li><strong>Profit:</strong> ₹ 55,000</li>
+    </ul>
+    <div class="footer">
+        <span class="view-details-cta">
+            Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+        </span>
+    </div>
+</a>
+
+<!-- Project Card 5 -->
+<a href="/internship/detail/project5" class="internship-card" data-category="Video and Animation">
+    <div class="heading">
+        <div class="content">
+            <p class="job-title">Wedding Video Editing</p>
+        </div>
+    </div>
+    <ul class="job-details">
+        <li><strong>Category:</strong>Video and Animation</li>
+        <li><strong>Deadline:</strong> 8 days</li>
+        <li><strong>Profit:</strong> ₹ 45,000</li>
+    </ul>
+    <div class="footer">
+        <span class="view-details-cta">
+            Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+        </span>
+    </div>
+</a>
+
+<!-- Project Card 6 -->
+<a href="/internship/detail/project6" class="internship-card" data-category="Audio and Music">
+    <div class="heading">
+        <div class="content">
+            <p class="job-title">Audio editing</p>
+        </div>
+    </div>
+    <ul class="job-details">
+        <li><strong>Category:</strong>Audio and Music</li>
+        <li><strong>Deadline:</strong> 15 days</li>
+        <li><strong>Profit:</strong> ₹ 50,000</li>
+    </ul>
+    <div class="footer">
+        <span class="view-details-cta">
+            Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+        </span>
+    </div>
+</a>
+
+<!-- Project Card 7 -->
+<a href="/internship/detail/project7" class="internship-card" data-category="Engineering">
+    <div class="heading">
+        <div class="content">
+            <p class="job-title">Software Testing Automation</p>
+        </div>
+    </div>
+    <ul class="job-details">
+        <li><strong>Category:</strong>Engineering</li>
+        <li><strong>Deadline:</strong> 9 days</li>
+        <li><strong>Profit:</strong> ₹ 30,000</li>
+    </ul>
+    <div class="footer">
+        <span class="view-details-cta">
+            Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+        </span>
+    </div>
+</a>
+
+<!-- Project Card 8 -->
+<a href="/internship/detail/project8" class="internship-card" data-category="Web Development">
+    <div class="heading">
+        <div class="content">
+            <p class="job-title">Freelance website</p>
+        </div>
+    </div>
+    <ul class="job-details">
+        <li><strong>Category:</strong>Web Development</li>
+        <li><strong>Deadline:</strong> 4 days</li>
+        <li><strong>Profit:</strong> ₹ 70,000</li>
+    </ul>
+    <div class="footer">
+        <span class="view-details-cta">
+            Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+        </span>
+    </div>
+</a>
+
+<!-- Project Card 9 -->
+<a href="/internship/detail/project9" class="internship-card" data-category="Business">
+    <div class="heading">
+        <div class="content">
+            <p class="job-title">Digital Marketing Analytics</p>
+        </div>
+    </div>
+    <ul class="job-details">
+        <li><strong>Category:</strong>Business</li>
+        <li><strong>Deadline:</strong> 17 days</li>
+        <li><strong>Profit:</strong> ₹ 40,000</li>
+    </ul>
+    <div class="footer">
+        <span class="view-details-cta">
+            Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+        </span>
+    </div>
+</a>
+
+<!-- Project Card 10 -->
+<a href="/internship/detail/project10" class="internship-card" data-category="AI/ML and Data Science">
+    <div class="heading">
+        <div class="content">
+            <p class="job-title">Natural Language Processing</p>
+        </div>
+    </div>
+    <ul class="job-details">
+        <li><strong>Category:</strong> AI/ML and Data Science</li>
+        <li><strong>Deadline:</strong> 12 days</li>
+        <li><strong>Profit:</strong> ₹ 55,000</li>
+    </ul>
+    <div class="footer">
+        <span class="view-details-cta">
+            Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+        </span>
+    </div>
+</a>
+    <!-- Project Card 11 -->
+    <a href="/internship/detail/project11" class="internship-card" data-category="Engineering">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">IoT Smart Home Solutions</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong>Engineering</li>
+            <li><strong>Deadline:</strong> 6 days</li>
+            <li><strong>Profit:</strong> ₹ 60,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 12 -->
+    <a href="/internship/detail/project12" class="internship-card" data-category="Graphic Designing">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">Logo Editing</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong>Graphic Designing</li>
+            <li><strong>Deadline:</strong> 18 days</li>
+            <li><strong>Profit:</strong> ₹ 50,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 13 -->
+    <a href="/internship/detail/project13" class="internship-card" data-category="Graphic Designing">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">Packaging Design</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong>Graphic Designing</li>
+            <li><strong>Deadline:</strong> 25 days</li>
+            <li><strong>Profit:</strong> ₹ 65,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 14 -->
+    <a href="/internship/detail/project14" class="internship-card" data-category="Web Development">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">Web Development with React</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong> Web Development</li>
+            <li><strong>Deadline:</strong> 13 days</li>
+            <li><strong>Profit:</strong> ₹ 45,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 15 -->
+    <a href="/internship/detail/project15" class="internship-card" data-category="Robotics">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">Robotics for Automation</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong> Robotics</li>
+            <li><strong>Deadline:</strong> 1 day</li>
+            <li><strong>Profit:</strong> ₹ 70,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 16 -->
+    <a href="/internship/detail/project16" class="internship-card" data-category="Business">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">Social Media Strategy</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong>Business</li>
+            <li><strong>Deadline:</strong> 19 days</li>
+            <li><strong>Profit:</strong> ₹ 30,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 17 -->
+    <a href="/internship/detail/project17" class="internship-card" data-category="AI/ML and Data Science">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">AI-Powered Chatbots</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong> AI/ML and Data Science</li>
+            <li><strong>Deadline:</strong> 11 days</li>
+            <li><strong>Profit:</strong> ₹ 60,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 18 -->
+    <a href="/internship/detail/project18" class="internship-card" data-category="Robotics">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">Virtual Reality robots</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong>Robotics</li>
+            <li><strong>Deadline:</strong> 3 days</li>
+            <li><strong>Profit:</strong> ₹ 50,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 19 -->
+    <a href="/internship/detail/project19" class="internship-card" data-category="Video and Animation">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">Reels and youtube shorts editing</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong>Video and Animation</li>
+            <li><strong>Deadline:</strong> 7 days</li>
+            <li><strong>Profit:</strong> ₹ 65,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 20 -->
+    <a href="/internship/detail/project20" class="internship-card" data-category="Audio and Music">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">Audio Mixing</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong>Audio and Music</li>
+            <li><strong>Deadline:</strong> 16 days</li>
+            <li><strong>Profit:</strong> ₹ 75,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 21 -->
+    <a href="/internship/detail/project21" class="internship-card" data-category="Graphic Designing">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">Advertising Design</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong>Graphic Designing</li>
+            <li><strong>Deadline:</strong> 21 days</li>
+            <li><strong>Profit:</strong> ₹ 55,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 22 -->
+    <a href="/internship/detail/project22" class="internship-card" data-category="Robotics">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">Robotics Process Automation</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong> Robotics</li>
+            <li><strong>Deadline:</strong> 5 days</li>
+            <li><strong>Profit:</strong> ₹ 80,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 23 -->
+    <a href="/internship/detail/project23" class="internship-card" data-category="AI/ML and Data Science">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">Big Data Analysis</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong>AI/ML and Data Science</li>
+            <li><strong>Deadline:</strong> 22 days</li>
+            <li><strong>Profit:</strong> ₹ 50,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+
+    <!-- Project Card 24 -->
+    <a href="/internship/detail/project24" class="internship-card" data-category="Business">
+        <div class="heading">
+            <div class="content">
+                <p class="job-title">FinTech Development</p>
+            </div>
+        </div>
+        <ul class="job-details">
+            <li><strong>Category:</strong>Business</li>
+            <li><strong>Deadline:</strong> 10 days</li>
+            <li><strong>Profit:</strong> ₹ 90,000</li>
+        </ul>
+        <div class="footer">
+            <span class="view-details-cta">
+                Add to Dashboard<i class="ic-16-s15-chevron-right"></i>
+            </span>
+        </div>
+    </a>
+</div>
+<footer>
+    <p>&copy; 2024 Our Company</p>
+       </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

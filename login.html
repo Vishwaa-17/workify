@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="login-card">
+            <h1>Log in to Workify</h1>
+            <form id="login-form" method="POST">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder="Username or Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-btn">Log In</button>
+                <p class="separator">or</p>
+                <div class="social-login">
+                    <button type="button" class="google-btn">Continue with Google</button>
+                    <button type="button" class="apple-btn">Continue with Apple</button>
+                </div>
+                <div class="signup">
+                    <p>Don't have an account? </p><br>
+                    <a href="signup.html">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

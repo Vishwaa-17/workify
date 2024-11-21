@@ -1,0 +1,922 @@
+/* General Styles */
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navigation Bar Styles */
+.header {
+    width: 100%;
+    background-color: #477166; /* Green background */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.left img {
+    width: 130px;
+    padding: 10px;
+}
+
+.mid .navbar {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: rgb(11, 218, 190);
+}
+/* Search Bar */
+.navbar .search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.search-bar input:focus {
+    border-color: #28a745; /* Green border on focus */
+}
+
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10%;
+    background-color: #f5f5f5;
+}
+
+.hero-text {
+    width: 50%;
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.hero-text .highlight-text {
+    color: #2ecc71; /* Accent color */
+}
+
+/* Freelancer Image */
+.freelancer-image {
+    width: 40%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta h2 {
+    font-size: 30px;
+    color: rgb(67, 172, 88);
+}
+
+.cta-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(67, 172, 88);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-btn:hover {
+    background-color: rgb(40, 167, 69);
+}
+
+/* Modal (Sign Up Form) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-content .submit-btn {
+    padding: 12px 25px;
+    background-color: rgb(67, 172, 88);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content .submit-btn:hover {
+    background-color: rgb(40, 167, 69);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Featured Services Section */
+.featured-services {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.featured-services h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.service-card {
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.service-card p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-card {
+    width: 45%;
+    padding: 20px;
+    background-color: white;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.testimonial-card p:last-child {
+    text-align: right;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #28a745;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+/* Service container to hold all the service cards */
+.service-container {
+    display: flex; /* Use Flexbox for horizontal layout */
+    flex-wrap: nowrap; /* Prevent wrapping of cards */
+    gap: 20px; /* Space between cards */
+    justify-content: flex-start; /* Align items to the left */
+    padding: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+  }
+  
+  /* Styling for each service card */
+  .service-card {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set the same height to make it square */
+    text-align: center; /* Center the text inside the service card */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f4f4f4; /* Light background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    transition: transform 0.3s ease; /* Smooth hover transition */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
+  /* Image container inside each service card */
+  .service-image-container {
+    width: 60%; /* Set the width to 60% of the card */
+    height: 60px; /* Fixed height for the image container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for images */
+  .service-image-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensure the images maintain their aspect ratio */
+  }
+  
+  /* Text styling inside the service card */
+  .service-card p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px; /* Adjust the spacing from the image */
+    font-weight: bold;
+    margin-bottom: 0; /* Remove bottom margin to prevent space */
+  }
+  
+  /* Prevent color change on click or focus */
+  .service-card a:focus,
+  .service-card a:active {
+    color: inherit; /* Inherit the original color */
+    outline: none; /* Remove the outline on focus */
+  }
+  /*carousel*/
+ /* Remove margin and padding from body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the slides container */
+.slides-track {
+    display: flex;
+    justify-content: flex-start; /* Align slides horizontally */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px; /* Add space between slides */
+    width: 100%; /* Make the container take the full width */
+    box-sizing: border-box; /* Include padding and borders in the element's total width */
+    margin: 0; /* Remove any margin */
+}
+
+/* Styling for each slide */
+.slide {
+    flex-shrink: 0; /* Prevent the slide from shrinking */
+    scroll-snap-align: start;
+    width: 22%; /* Slightly reduce the slide width to 22% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for each slide content */
+.slide-content {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slide-content:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for category links */
+.category-link {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.category-link:hover .category-title {
+    color: #007BFF; /* Change title color on hover */
+}
+
+/* Category title styling */
+.category-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Category image styling */
+.category-image {
+    width: 100%;
+    max-width: 188px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 899px) {
+    .slides-track {
+        width: 100%; /* Ensure full width on smaller screens */
+    }
+
+    .slide {
+        width: 40%; /* Slightly smaller slides at 40% of the container width on smaller screens */
+    }
+
+    .category-title {
+        font-size: 1.2rem; /* Smaller font size for smaller screens */
+    }
+
+    .category-image {
+        max-width: 130px; /* Smaller images on small screens */
+    }
+}
+
+@media (max-width: 599px) {
+    .slide {
+        width: 75%; /* Slightly smaller slides at 75% of the container width on very small screens */
+    }
+
+    .slides-track {
+        width: 100%; /* Ensure full width on very small screens */
+    }
+
+    .category-title {
+        font-size: 1rem; /* Further reduce font size */
+    }
+}
+/* Styling for the Popular Services Section */
+.popular-services {
+    padding: 10px 10px; /* Adds padding around the section */
+    background-color: #f8f8f8; /* Light background color for the section */
+    text-align: center; /* Center the content */
+    border-radius: 2px; /* Rounded corners */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin-top: 10px; /* Space above the section */
+    margin-bottom: 10px; /* Space below the section */
+}
+
+/* Styling for the Popular Services title */
+.h2-title {
+    font-size: 2rem; /* Adjust size of the title */
+    font-weight: 800; /* Bold the title */
+    color: #333; /* Dark color for the text */
+    margin-bottom: 20px; /* Space below the title */
+    letter-spacing: 1px; /* Slightly increase letter spacing for better readability */
+}
+
+
+/*Jobs page*/
+/* Styling for the container of the search bar */
+.SearchBar-searchInputWrap-SfA {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 22px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 1100
+  }
+  
+  /* Style for the search icon */
+  .SearchBar-searchIcon-uv8 {
+    margin-right: 15px;  /* Space between the icon and input */
+  }
+  
+  /* Style for the search icon SVG */
+  .SearchBar-icon-n5N {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Style for the search input field */
+  .SearchBar-searchInput-dYr {
+    border: none;
+    outline: none;
+    height: 100%;  /* Make the input fill the entire height of the container */
+    padding: 0 15px;  /* Add padding inside the input field */
+    width: 100%;  /* Make the input fill the remaining space */
+    font-size: 16px;
+  }
+  
+  /* Hide the label text for screen readers */
+  .SearchBar-screenReaderOnly-S_p {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  .Content-headerAndFilterButton-K7J {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .Content-joblistHeader-tRn {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .Content-jobCount-jAK {
+    font-size: 18px;
+    color: gray;
+  }
+  
+  .Content-advancedFiltersButton-Yiv {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .Content-advancedFiltersButton-Yiv:hover {
+    background-color: #0056b3;
+  }
+  
+  .Content-mobileOnly-zlV {
+    display: none;  /* This will hide the button by default on non-mobile screens */
+  }
+  
+  /* For mobile screens */
+  @media (max-width: 768px) {
+    .Content-mobileOnly-zlV {
+      display: block;  /* This will make the button visible on mobile */
+    }
+  }
+  /* Styling for the jobs filter section */
+.jobs-filter {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* Job Category Dropdown */
+#jobCategory {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  #jobCategory:focus {
+    border-color: #0073e6; /* Blue border on focus */
+  }
+  
+  #jobCategory option {
+    font-size: 16px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .search-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    #searchInput {
+      width: 100%;
+    }
+  
+    #jobCategory {
+      width: 100%;
+    }
+  }
+  body {
+    font-family: Arial, sans-serif;
+}
+
+.popular-list {
+    margin: 20px;
+}
+
+.popular-list span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.popular-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.popular-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.popular-list a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.popular-list a.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.popular-list a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+#job-list {
+    margin-top: 20px;
+}
+
+.job-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    margin: 0 0 10px 0;
+}
+
+.job-card p {
+    margin: 5px 0;
+}
+
+.job-card a {
+    text-decoration: none;
+    color: #007bff;
+}
+/* Container for the cards */
+.card-container {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row, equally spaced */
+    grid-gap: 20px; /* Space between the cards */
+    padding: 20px; /* Padding around the container */
+    margin: 0;  /* Remove margin from container */
+}
+
+/* Each individual card */
+.internship-card {
+    background-color: #fff;      /* White background */
+    border: 1px solid #ddd;      /* Light grey border */
+    border-radius: 8px;          /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;            /* Prevent content from overflowing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the card */
+.internship-card:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Heading section of the card */
+.internship-card .heading {
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.internship-card .heading .content .job-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Job details section (Category, Deadline, Profit) */
+.internship-card .job-details {
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    color: #666;
+}
+
+.internship-card .job-details li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.internship-card .job-details li strong {
+    color: #333;
+}
+
+/* Footer section with view details link */
+.internship-card .footer {
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.internship-card .footer .view-details-cta {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.internship-card .footer .view-details-cta:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards per row on medium screens */
+    }
+    .internship-card {
+        width: calc(33.333% - 20px); /* Adjust card width to fit 3 per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    }
+    .internship-card {
+        width: calc(50% - 20px); /* Adjust card width to fit 2 per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* 1 card per row on very small screens */
+    }
+    .internship-card {
+        width: 100%; /* Full width for mobile screens */
+    }
+}
+.sort-button {
+    margin: 20px;
+}
+
+.sort-button span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px; /* Adds space between "Filters" and the options */
+}
+
+.sort-button ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Makes the list items appear in a horizontal row */
+}
+
+.sort-button li {
+    margin-right: 10px; /* Adds space between the buttons */
+}
+
+.sort-button button {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.sort-button button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.sort-button button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.projects-section, .dashboard-section {
+    margin-bottom: 30px;
+}
+
+.project-card, .dashboard-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    margin: 0;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.dashboard-section {
+    margin-top: 50px;
+}
+
+.dashboard-container {
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+}
+/* Container for the cards */
+.card-container {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row, equally spaced */
+    grid-gap: 20px; /* Space between the cards */
+    padding: 20px; /* Padding around the container */
+    margin: 0;  /* Remove margin from container */
+}
+
+/* Each individual project card */
+.project-card {
+    background-color: #fff;      /* White background */
+    border: 1px solid #ddd;      /* Light grey border */
+    border-radius: 8px;          /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;            /* Prevent content from overflowing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the card */
+.project-card:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Heading section of the project card */
+.project-card h3 {
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Job details section (Category, Deadline, Profit) */
+.project-card p {
+    padding: 10px;
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.project-card p strong {
+    color: #333;
+}
+
+/* Footer section with the Add to Dashboard button */
+.project-card button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.project-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards per row on medium screens */
+    }
+    .project-card {
+        width: calc(33.333% - 20px); /* Adjust card width to fit 3 per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    }
+    .project-card {
+        width: calc(50% - 20px); /* Adjust card width to fit 2 per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* 1 card per row on very small screens */
+    }
+    .project-card {
+        width: 100%; /* Full width for mobile screens */
+    }
+}
+

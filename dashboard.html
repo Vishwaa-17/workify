@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Our Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpeg" alt="logo">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Categories -->
+    <div class="popular-list">
+        <span>Categories:</span>
+        <ul>
+            <li><a href="#" onclick="filterJobs(event)">All</a></li> <!-- Show all categories -->
+            <li><a href="#" onclick="filterJobs(event)">Web Development</a></li>
+            <li><a href="#" onclick="filterJobs(event)">Video and Animation</a></li>
+            <li><a href="#" onclick="filterJobs(event)">Audio and Music</a></li>
+            <li><a href="#" onclick="filterJobs(event)">Business</a></li>
+            <li><a href="#" onclick="filterJobs(event)">Graphic Designing</a></li>
+            <li><a href="#" onclick="filterJobs(event)">AI/ML and Data Science</a></li>
+            <li><a href="#" onclick="filterJobs(event)">Engineering</a></li>
+            <li><a href="#" onclick="filterJobs(event)">Robotics</a></li>
+        </ul>
+    </div>
+    <div class="Content-headerAndFilterButton-K7J">
+        <div class="Content-joblistHeader-tRn" role="heading" aria-level="3">
+            Projects
+        </div>
+    </div>
+<!--comments-->
+    <div class="card-container" id="project-cards" >
+        <!-- Example of a project card -->
+        <div class="project-card" data-id="1">
+            <h3>AI in Healthcare</h3>
+            <p><strong>Category:</strong> AI/ML and Data Science</p>
+            <p><strong>Deadline:</strong> 10 days</p>
+            <p><strong>Profit:</strong> ₹50,000</p>
+            <button onclick="addToDashboard(event)">Add to Dashboard</button>
+        </div>
+        <div class="project-card" data-id="2">
+            <h3>Data Science for business</h3>
+            <p><strong>Category:</strong>AI/ML and Data Science</p>
+            <p><strong>Deadline:</strong> 5 days</p>
+            <p><strong>Profit:</strong> ₹40,000</p>
+            <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="project-card" data-id="3">
+                <h3>Blockchain Development</h3>
+                <p><strong>Category:</strong> Engineering</p>
+                <p><strong>Deadline:</strong> 3 days</p>
+                <p><strong>Profit:</strong> ₹60,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 4 -->
+            <div class="project-card" data-id="4">
+                <h3>Charity Website Development</h3>
+                <p><strong>Category:</strong> Web Development</p>
+                <p><strong>Deadline:</strong> 2 days</p>
+                <p><strong>Profit:</strong> ₹55,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 5 -->
+            <div class="project-card" data-id="5">
+                <h3>Wedding Video Editing</h3>
+                <p><strong>Category:</strong> Video and Animation</p>
+                <p><strong>Deadline:</strong> 8 days</p>
+                <p><strong>Profit:</strong> ₹45,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 6 -->
+            <div class="project-card" data-id="6">
+                <h3>Audio Editing</h3>
+                <p><strong>Category:</strong> Audio and Music</p>
+                <p><strong>Deadline:</strong> 15 days</p>
+                <p><strong>Profit:</strong> ₹50,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 7 -->
+            <div class="project-card" data-id="7">
+                <h3>Software Testing Automation</h3>
+                <p><strong>Category:</strong> Engineering</p>
+                <p><strong>Deadline:</strong> 9 days</p>
+                <p><strong>Profit:</strong> ₹30,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 8 -->
+            <div class="project-card" data-id="8">
+                <h3>Freelance Website</h3>
+                <p><strong>Category:</strong> Web Development</p>
+                <p><strong>Deadline:</strong> 4 days</p>
+                <p><strong>Profit:</strong> ₹70,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 9 -->
+            <div class="project-card" data-id="9">
+                <h3>Digital Marketing Analytics</h3>
+                <p><strong>Category:</strong> Business</p>
+                <p><strong>Deadline:</strong> 17 days</p>
+                <p><strong>Profit:</strong> ₹40,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 10 -->
+            <div class="project-card" data-id="10">
+                <h3>Natural Language Processing</h3>
+                <p><strong>Category:</strong> AI/ML and Data Science</p>
+                <p><strong>Deadline:</strong> 12 days</p>
+                <p><strong>Profit:</strong> ₹55,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 11 -->
+            <div class="project-card" data-id="11">
+                <h3>IoT Smart Home Solutions</h3>
+                <p><strong>Category:</strong> Engineering</p>
+                <p><strong>Deadline:</strong> 6 days</p>
+                <p><strong>Profit:</strong> ₹60,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 12 -->
+            <div class="project-card" data-id="12">
+                <h3>Logo Editing</h3>
+                <p><strong>Category:</strong> Graphic Designing</p>
+                <p><strong>Deadline:</strong> 18 days</p>
+                <p><strong>Profit:</strong> ₹50,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 13 -->
+            <div class="project-card" data-id="13">
+                <h3>Packaging Design</h3>
+                <p><strong>Category:</strong> Graphic Designing</p>
+                <p><strong>Deadline:</strong> 25 days</p>
+                <p><strong>Profit:</strong> ₹65,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 14 -->
+            <div class="project-card" data-id="14">
+                <h3>Web Development with React</h3>
+                <p><strong>Category:</strong> Web Development</p>
+                <p><strong>Deadline:</strong> 13 days</p>
+                <p><strong>Profit:</strong> ₹45,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 15 -->
+            <div class="project-card" data-id="15">
+                <h3>Robotics for Automation</h3>
+                <p><strong>Category:</strong> Robotics</p>
+                <p><strong>Deadline:</strong> 1 day</p>
+                <p><strong>Profit:</strong> ₹70,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 16 -->
+            <div class="project-card" data-id="16">
+                <h3>Social Media Strategy</h3>
+                <p><strong>Category:</strong> Business</p>
+                <p><strong>Deadline:</strong> 19 days</p>
+                <p><strong>Profit:</strong> ₹30,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 17 -->
+            <div class="project-card" data-id="17">
+                <h3>AI-Powered Chatbots</h3>
+                <p><strong>Category:</strong> AI/ML and Data Science</p>
+                <p><strong>Deadline:</strong> 11 days</p>
+                <p><strong>Profit:</strong> ₹60,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 18 -->
+            <div class="project-card" data-id="18">
+                <h3>Virtual Reality Robots</h3>
+                <p><strong>Category:</strong> Robotics</p>
+                <p><strong>Deadline:</strong> 3 days</p>
+                <p><strong>Profit:</strong> ₹50,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 19 -->
+            <div class="project-card" data-id="19">
+                <h3>Reels and YouTube Shorts Editing</h3>
+                <p><strong>Category:</strong> Video and Animation</p>
+                <p><strong>Deadline:</strong> 7 days</p>
+                <p><strong>Profit:</strong> ₹65,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+        
+            <!-- Project Card 20 -->
+            <div class="project-card" data-id="20">
+                <h3>Audio Mixing</h3>
+                <p><strong>Category:</strong> Audio and Music</p>
+                <p><strong>Deadline:</strong> 16 days</p>
+                <p><strong>Profit:</strong> ₹40,000</p>
+                <button onclick="addToDashboard(event)">Add to Dashboard</button>
+            </div>
+            <!-- Project Card 21 -->
+<div class="project-card" data-id="21">
+    <h3>Advertising Designing</h3>
+    <p><strong>Category:</strong>Graphic Designing</p>
+    <p><strong>Deadline:</strong> 21 days</p>
+    <p><strong>Profit:</strong> ₹55,000</p>
+    <button onclick="addToDashboard(event)">Add to Dashboard</button>
+</div>
+
+<!-- Project Card 22 -->
+<div class="project-card" data-id="22">
+    <h3>Robotics Proocess Automation</h3>
+    <p><strong>Category:</strong>Robotics</p>
+    <p><strong>Deadline:</strong> 5 days</p>
+    <p><strong>Profit:</strong> ₹80,000</p>
+    <button onclick="addToDashboard(event)">Add to Dashboard</button>
+</div>
+
+<!-- Project Card 23 -->
+<div class="project-card" data-id="23">
+    <h3>Big Data Analysis</h3>
+    <p><strong>Category:</strong>AI/ML and Dalat Science</p>
+    <p><strong>Deadline:</strong> 22 days</p>
+    <p><strong>Profit:</strong> ₹50,000</p>
+    <button onclick="addToDashboard(event)">Add to Dashboard</button>
+</div>
+
+<!-- Project Card 24 -->
+<div class="project-card" data-id="24">
+    <h3>Fintech Development</h3>
+    <p><strong>Category:</strong>Business</p>
+    <p><strong>Deadline:</strong> 10 days</p>
+    <p><strong>Profit:</strong> 905,000</p>
+    <button onclick="addToDashboard(event)">Add to Dashboard</button>
+</div>
+
+        </div>        
+    </div>
+</div>
+
+<hr>
+
+<div class="dashboard-section">
+    <h2>Your Dashboard</h2>
+    <div class="dashboard-container" id="dashboard">
+        <!-- Added jobs will appear here -->
+    </div>
+</div>
+
+
+<footer>
+    <p>&copy; 2024 Our Company</p>
+       </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
